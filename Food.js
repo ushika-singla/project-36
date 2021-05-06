@@ -43,17 +43,6 @@ class Food {
     }
 
   display() {
-      textSize(15);
-      fill("white");
-      stroke(5);
-      if(fedTime >= 12) {
-          text("Last Feed: " + fedTime % 12 + " PM", 150, 60);
-      } else if(fedTime === 0){
-          text("Last Feed: 12 AM", 150, 60);
-      } else {
-          text("Last Feed: " + fedTime + " AM", 150, 60);
-      }
-
       var x = 80, y = 100;
       imageMode(CENTER);
       if(foodCount != 0) {
